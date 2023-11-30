@@ -2,6 +2,7 @@
   description = "Marcus' history-off Alacritty terminal";
 
   inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     alacritty.url = "github:marcuswhybrow/alacritty";
   };
 
