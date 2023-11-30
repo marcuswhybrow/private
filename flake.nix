@@ -1,5 +1,5 @@
 {
-  description = "Alacritty terminal with command history disabled and a dark colour theme";
+  description = "Marcus' history-off Alacritty terminal";
 
   inputs = {
     alacritty.url = "github:marcuswhybrow/alacritty";
@@ -30,6 +30,18 @@
         ${alacritty}/bin/alacritty \
         $out/bin/private \
         --add-flags "--command ${pkgs.fish}/bin/fish --private"
+
+      mkdir -p $out/share/applications
+      cat > $out/share/applications/private.desktop << EOF
+      [Desktop Entry]
+      Version=1.0
+      Name=Private
+      GenericName=Private fish shell with dark Alacritty theme
+      Terminal=false
+      Type=Application
+      Exec=$out/bin/private
+      EOF
+
     '');
 
     packages.x86_64-linux.default = self.packages.x86_64-linux.private;
