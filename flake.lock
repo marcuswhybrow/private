@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1711047588,
-        "narHash": "sha256-QjT1bpe3t/mnR8oe4IIaFikpB5CVlNZMfRuv7Ys31BA=",
+        "lastModified": 1726499381,
+        "narHash": "sha256-hbBhiQTcgLEndlmcF0UzID3tn+nrRkOftVyCx0Dd10g=",
         "owner": "marcuswhybrow",
         "repo": "alacritty",
-        "rev": "5d2375434ad91acc1997062813804696ee0bf428",
+        "rev": "21b7d170f85ee5d5253e6d8bcdc22d444d5cbcb3",
         "type": "github"
       },
       "original": {
